@@ -8,6 +8,6 @@ const processData = (data) => {
 // const myWorker = new Worker('worker.js');
 
 onmessage = (data) => {
-  const sumOfData = processData(data)
+  const sumOfData = processData(data.data)
   postMessage(sumOfData)
 }

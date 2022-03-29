@@ -5,5 +5,5 @@ const myWorker = new Worker('worker.js')
 myWorker.postMessage(data)
 
 myWorker.onmessage = (sumOfData) => {
-  console.log(sumOfData)
+  console.log(`Received message from worker: ${sumOfData.data}`)
 }
