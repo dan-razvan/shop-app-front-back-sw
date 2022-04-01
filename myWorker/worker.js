@@ -1,6 +1,5 @@
 const processData = (data) => {
-  let sum = null
-  data.forEach((number) => (sum += number))
+  let sum = data.reduce((prevVal, nextVal) => prevVal + nextVal)
 
   return sum
 }
